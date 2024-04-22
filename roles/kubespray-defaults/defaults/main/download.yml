@@ -171,9 +171,9 @@ storage_googleapis_url: https://storage.googleapis.com
 get_helm_url: http://192.168.20.64
 
 # Download URLs
-kubelet_download_url: "{{ dl_k8s_io_url }}/data/k8s/kubelet"
-kubectl_download_url: "{{ dl_k8s_io_url }}/data/k8s/kubectl"
-kubeadm_download_url: "{{ dl_k8s_io_url }}/data/k8s/kubeadm"
+kubelet_download_url: "{{ dl_k8s_io_url }}/data/k8s/kubelet-{{ kube_version }}"
+kubectl_download_url: "{{ dl_k8s_io_url }}/data/k8s/kubectl-{{ kube_version }}"
+kubeadm_download_url: "{{ dl_k8s_io_url }}/data/k8s/kubeadm-{{ kubeadm_version }}"
 etcd_download_url: "{{ github_url }}/data/k8s/etcd-{{ etcd_version }}-linux-{{ image_arch }}.tar.gz"
 cni_download_url: "{{ github_url }}/data/k8s/cni-plugins-linux-{{ image_arch }}-{{ cni_version }}.tgz"
 calicoctl_download_url: "{{ github_url }}/data/k8s/calicoctl-linux-{{ image_arch }}"
