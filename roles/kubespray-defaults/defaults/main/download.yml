@@ -168,7 +168,7 @@ yq_version: "v4.42.1"
 github_url: http://192.168.20.64
 dl_k8s_io_url: http://192.168.20.64
 storage_googleapis_url: https://storage.googleapis.com
-get_helm_url: https://get.helm.sh
+get_helm_url: http://192.168.20.64
 
 # Download URLs
 kubelet_download_url: "{{ dl_k8s_io_url }}/data/k8s/kubelet"
@@ -181,7 +181,7 @@ calico_crds_download_url: "{{ github_url }}/data/k8s/{{ calico_version }}.tar.gz
 ciliumcli_download_url: "{{ github_url }}/data/k8s/cilium-linux-{{ image_arch }}.tar.gz"
 crictl_download_url: "{{ github_url }}/data/k8s/crictl-{{ crictl_version }}-{{ ansible_system | lower }}-{{ image_arch }}.tar.gz"
 crio_download_url: "{{ storage_googleapis_url }}/cri-o/artifacts/cri-o.{{ image_arch }}.{{ crio_version }}.tar.gz"
-helm_download_url: "{{ get_helm_url }}/helm-{{ helm_version }}-linux-{{ image_arch }}.tar.gz"
+helm_download_url: "{{ get_helm_url }}/data/k8s/helm-{{ helm_version }}-linux-{{ image_arch }}.tar.gz"
 runc_download_url: "{{ github_url }}/data/k8s/runc.{{ image_arch }}"
 crun_download_url: "{{ github_url }}/data/k8s/crun-{{ crun_version }}-linux-{{ image_arch }}"
 youki_download_url: "{{ github_url }}/data/k8s/youki_{{ youki_version | regex_replace('\\.', '_') }}_linux.tar.gz"
