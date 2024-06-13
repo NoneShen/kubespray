@@ -97,7 +97,7 @@ docker_image_repo: "docker.io"
 quay_image_repo: "quay.mirrors.ustc.edu.cn"
 
 # github image repo define (ex multus only use that)
-github_image_repo: "ghcr.io"
+github_image_repo: "ghcr.m.daocloud.io"
 
 # TODO(mattymo): Move calico versions to roles/network_plugins/calico/defaults
 # after migration to container download
