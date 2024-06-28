@@ -483,7 +483,7 @@ kubelet_rotate_certificates: true
 kubelet_rotate_server_certificates: false
 
 # If set to true, kubelet errors if any of kernel tunables is different than kubelet defaults
-kubelet_protect_kernel_defaults: true
+kubelet_protect_kernel_defaults: false
 
 # Set additional sysctl variables to modify Linux kernel variables, for example:
 # additional_sysctl:
